@@ -53,11 +53,11 @@ def find_credentials(credentials):
     return credentials.find_by_password(password)
 
 
-def check_existing_email(password):
-    '''
-    Function that check if a email exists with that password and return a Boolean
-    '''
-    return Credentials.credentials_exist(password)
+# def check_existing_email(password):
+#     '''
+#     Function that check if a email exists with that password and return a Boolean
+#     '''
+#     return Credentials.credentials_exist(password)
 
 
 def main():
