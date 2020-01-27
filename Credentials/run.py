@@ -10,11 +10,11 @@ def create_user(first_name, last_name, phone_number, email):
     return new_user
 
 
-# def save_user(user_name):
-#     '''
-#     Function to save user
-#     '''
-#     user.save_user()
+def save_user(user_name):
+    '''
+    Function to save user
+    '''
+    user.save_user()
 
 
 def del_user(user):
