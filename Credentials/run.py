@@ -48,7 +48,7 @@ def del_credentials(credentials):
 
 def find_credentials(credentials):
     '''
-    Function that finds a credentiuals by email and returns the password
+    Function that finds a credentials by email and returns the password
     '''
     return credentials.find_by_password(password)
 
@@ -63,36 +63,35 @@ def check_existing_email(password):
 def main():
 
            print("Hello Welcome to your credentials list. What is your name?")
-            user_name = input()
+           user_name = input()
 
-            print(f"Hello {user_name}. what would you like to do?")
-            print('\n')
+           print(f"Hello {user_name}. what would you like to do?")
+           print('\n')
 
-            while True:
+           while True:
                    print("Use these short codes : cc - create a new credentials, dc - display credentials, fc -find a credentials, ex -exit the credentials list ")
+                   short_code = input().lower()
 
-                    short_code = input().lower()
+                if short_code == 'cc':
+                    print("New Credentials")
+                    print("-"*10)
 
-                    if short_code == 'cc':
-                           print("New Credentials")
-                            print("-"*10)
-
-                            print("First name ....")
+                    print("First name ....")
                             f_name = input()
 
-                            print("Last name ...")
+                    print("Last name ...")
                             l_name = input()
 
-                            print("Password ...")
+                    print("Password ...")
                             p_number = input()
 
-                            print("Email address ...")
+                    print("Email address ...")
                             e_address = input()
 
                         #     save_credentials(create_credentials(f_name,l_name,password,e_address)) # create and save new credentials.
-                            print('\n')
-                            print(f"New password {f_name} {l_name} created")
-                            print('\n')
+                    print('\n')
+                    print(f"New password {f_name} {l_name} created")
+                    print('\n')
 
                     elif short_code == 'dc':
 
@@ -107,10 +106,10 @@ def main():
                                     print('\n')
                             else:
                                    print('\n')
-                                    print("You dont seem to have any contacts saved yet")
+                                    print("You don't seem to have any contacts saved yet")
                                     print('\n')
 
-                    elif short_code == 'fc':
+                elif short_code == 'fc':
 
                            print("Enter the password you want to search for")
 

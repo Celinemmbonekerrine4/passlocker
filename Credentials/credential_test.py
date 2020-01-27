@@ -35,10 +35,10 @@ class TestUser(unittest.TestCase):
         '''
             test_delete_user to test if we can remove a user from our user list
             '''
-        self.new_user.save_user()
-        test_user = ("Celine", "Mmbone", "0723456789",
-                     "celinekerrine@gmail.com")  # user
-        # test_user.save_user()
+        # self.new_user.save_user()
+        # test_user = ("Celine", "Mmbone", "0723456789",
+        #              "celinekerrine@gmail.com")  # user
+        # # test_user.save_user()
 
 
 class TestCredentials(unittest.TestCase):
@@ -61,11 +61,11 @@ class TestCredentials(unittest.TestCase):
         Credentials.credentials_list = []
 
 # other test cases here
-    def test_save_multiple_credentials(self):
+    # def test_save_multiple_credentials(self):
 
-        self.new_credentials.save_credentials()
-        test_credentials = Credentials(
-            "twitter", "celinemmbone3", "CelineColline")  # new credentials
+    #     self.new_credentials.save_credentials()
+    #     test_credentials = Credentials(
+    #         "twitter", "celinemmbone3", "CelineColline")  # new credentials
 
 # More tests above
     def test_delete_credentials(self):
@@ -119,7 +119,7 @@ class TestCredentials(unittest.TestCase):
     #     '''
 
     #     self.new_credentials.save_credentials()
-    #     Credentials.copy_email("reneedaughty@gmail.com")
+    #     Credentials.copy_email("celinemmbone@gmail.com")
 
         # self.assertEqual(self.new_credentials.email,pyperclip.paste())
 
