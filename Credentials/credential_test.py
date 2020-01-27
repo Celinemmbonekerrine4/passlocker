@@ -110,9 +110,7 @@ class TestCredentials(unittest.TestCase):
         method that returns a list of all credentials saved
         '''
 
-        self.assertEqual(Credentials.display_credentials(),
-                         Credentials.credentials_list)
-
+        self.assertEqual(Credentials.display_all_credentials(),Credentials.credentials_list)
     # def test_copy_email(self):
     #     '''
     #     Test to confirm that we are copying the email address from a found credential
@@ -128,9 +126,6 @@ class TestCredentials(unittest.TestCase):
         method that returns a list of all credentials saved
         '''
 
-        self.assertEqual(Credentials.display_credentials(),
-                         Credentials.credentials_list)
-
-
+        self.assertEqual(Credentials.display_all_credentials(),Credentials.credentials_list)
 if __name__ == '__main__':
     unittest.main()  # self.assertEqual(len(Credentials.credentials_list))
