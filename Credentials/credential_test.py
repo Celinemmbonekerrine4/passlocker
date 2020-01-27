@@ -61,11 +61,11 @@ class TestCredentials(unittest.TestCase):
         Credentials.credentials_list = []
 
 # other test cases here
-    # def test_save_multiple_credentials(self):
+#     def test_save_multiple_credentials(self):
 
-    #     self.new_credentials.save_credentials()
-    #     test_credentials = Credentials(
-    #         "twitter", "celinemmbone3", "CelineColline")  # new credentials
+#         self.new_credentials.save_credentials()
+#         test_credentials = Credentials(
+#             "twitter", "celinemmbone3", "CelineColline")  # new credentials
 
 # More tests above
     def test_delete_credentials(self):
